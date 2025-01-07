@@ -6,9 +6,14 @@
 .card
 {
     width:18rem;
+    background: #000;
+    color:#fff;
 }
-/* .card img
+
+.card:hover
 {
-    width:10rem;
-    height:20rem;
-} */
+    width: 18rem;
+   border: 2px solid black; 
+   color:#000;
+   background: #fff;
+}

@@ -35,6 +35,7 @@ function Header() {
 
 
 <Routes>
+<Route path='/' element={<Home/>} /> 
  <Route path='/home' element={<Home/>} /> 
  <Route path='/popular' element={<Popular/>} /> 
  <Route path='/upcoming' element={<Upcoming/>} /> 

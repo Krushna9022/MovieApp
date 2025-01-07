@@ -37,7 +37,7 @@ function Toprate() {
     <div className="container-fluid ">
       <h1>Top Rated Movies</h1>
       {error && <p>Error: {error}</p>}
-      <div className="card-container row gap-5 justify-content-center animate__animated animate__backInLeft">
+      <div className="card-container row gap-5 justify-content-center animate__animated animate__backInRight">
         {movies.map((movie) => (
           <div key={movie.id} className="card col-4 ">
             <img
@@ -52,9 +52,9 @@ function Toprate() {
             </div>
           </div>
         ))}
-         <div  className="prev-next d-flex gap-3 mt-2 mb-3">
-      <div onClick={handlePreviousPage} className="btn btn-secondary  ms-auto ">⬅️prev</div>
-      <div onClick={handleNextPage} className="btn btn-secondary ">Next➡️</div>
+         <div  className="prev-next d-flex gap-3 mt-2 mb-3 justify-content-center">
+      <div onClick={handlePreviousPage} className="btn btn-secondary">⬅️{page-1}prev</div>
+      <div onClick={handleNextPage} className="btn btn-secondary ">Next{page+1}➡️</div>
       </div>
       </div>
      
