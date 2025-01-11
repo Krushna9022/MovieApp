@@ -16,6 +16,7 @@ function Home() {
          return res.json();
        })
        .then((data) => {
+        console.log(data);
          setMovies(data.results || []);
        })
        .catch((err) => {

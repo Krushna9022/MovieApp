@@ -35,7 +35,7 @@ function Toprate() {
   return (
     <>
     <div className="container-fluid ">
-      <h1>Top Rated Movies</h1>
+      <h1 className='text-center'>Top Rated Movies</h1>
       {error && <p>Error: {error}</p>}
       <div className="card-container row gap-5 justify-content-center animate__animated animate__backInRight">
         {movies.map((movie) => (
